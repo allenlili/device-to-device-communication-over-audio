@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com9336.receiver.MainActivity">
+
+    <Button
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Task 1"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button01"
+        android:text="Stop" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button02"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Result"
+        android:textSize="20dp"/>
+
+
+    <RadioGroup android:id="@+id/rg"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignStart="@+id/task"
+                android:layout_marginTop="24dp">
+
+        <RadioButton
+            android:text="0 - 4000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/textView1"
+            android:id="@+id/radioButton" />
+
+        <RadioButton
+            android:text="4001 - 8000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/radioButton2"
+            android:layout_below="@+id/radioButton"
+            android:layout_alignStart="@+id/radioButton" />
+
+        <RadioButton
+            android:text="8001 - 12000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButton2"
+            android:layout_alignStart="@+id/radioButton2"
+            android:layout_marginTop="18dp"
+            android:id="@+id/radioButton3" />
+
+        <RadioButton
+            android:text="12001 - 16000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButton3"
+            android:layout_alignStart="@+id/radioButton3"
+            android:layout_marginTop="22dp"
+            android:id="@+id/radioButton4" />
+
+        <RadioButton
+            android:text="16001 - 20000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButton4"
+            android:layout_alignStart="@+id/radioButton4"
+            android:layout_marginTop="18dp"
+            android:id="@+id/radioButton5" />
+
+    </RadioGroup>
+
+    <RadioGroup android:id="@+id/rg2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignStart="@+id/task"
+        android:layout_marginTop="24dp">
+
+        <RadioButton
+            android:text="audible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/textView1"
+            android:id="@+id/radioButton21"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:text="inaudible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/radioButton22"
+            android:layout_below="@+id/radioButton"
+            android:layout_alignStart="@+id/radioButton"
+            android:textSize="16dp"/>
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
